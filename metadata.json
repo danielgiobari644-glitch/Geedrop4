@@ -1,0 +1,5 @@
+{
+  "name": "Geedrop",
+  "description": "Geedrop is a high-performance, social-first file sharing and communication platform. It combines secure cloud storage with real-time messaging and community-driven groups. Features include instant file uploads, direct and group chats, a 'Nearby Share' discovery mode, and seamless Google authentication.",
+  "requestFramePermissions": []
+}
