@@ -1,5 +1,3 @@
-import { clsx } from 'clsx';
-import { twMerge } from 'tailwind-merge';
 import { auth } from './firebase.js';
 
 export const OperationType = {
@@ -34,8 +32,12 @@ export function handleFirestoreError(error, operationType, path) {
   throw new Error(JSON.stringify(errInfo));
 }
 
+// Simple vanilla replacement for clsx + tailwind-merge
 export function cn(...inputs) {
-  return twMerge(clsx(inputs));
+  return inputs
+    .flat(Infinity)
+    .filter(Boolean)
+    .join(' ');
 }
 
 export function formatBytes(bytes, decimals = 2) {

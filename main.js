@@ -4,7 +4,7 @@ import {
   createUserWithEmailAndPassword, 
   signInWithPopup, 
   signOut 
-} from 'firebase/auth';
+} from 'https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js';
 import { 
   collection, 
   doc, 
@@ -20,8 +20,8 @@ import {
   increment, 
   arrayUnion,
   getDocs
-} from 'firebase/firestore';
-import { ref, uploadBytes, getDownloadURL, deleteObject } from 'firebase/storage';
+} from 'https://www.gstatic.com/firebasejs/10.11.0/firebase-firestore.js';
+import { ref, uploadBytes, getDownloadURL, deleteObject } from 'https://www.gstatic.com/firebasejs/10.11.0/firebase-storage.js';
 import { auth, db, storage, googleProvider } from './firebase.js';
 import { cn, formatBytes, handleFirestoreError, OperationType } from './utils.js';
 
